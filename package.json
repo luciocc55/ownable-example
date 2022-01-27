@@ -1,0 +1,31 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test-blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "set NODE_OPTIONS=--openssl-legacy-provider&npx hardhat test",
+    "compile": "set NODE_OPTIONS=--openssl-legacy-provider&npx hardhat compile",
+    "deploy": "set NODE_OPTIONS=--openssl-legacy-provider&npx hardhat run scripts/deploy.ts",
+    "node": "set NODE_OPTIONS=--openssl-legacy-provider&npx hardhat node"
+  },
+  "author": "lucio-cesolari",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "@openzeppelin/contracts": "^4.4.2",
+    "@typechain/ethers-v5": "^6.0.0",
+    "@types/mocha": "^9.1.0",
+    "chai": "^4.3.6",
+    "dotenv": "^14.3.2",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.3",
+    "hardhat": "^2.8.3",
+    "hardhat-deploy": "^0.9.28",
+    "hardhat-deploy-ethers": "^0.3.0-beta.13",
+    "hardhat-typechain": "^0.3.5",
+    "solidity-coverage": "^0.7.18",
+    "ts-node": "^10.4.0"
+  }
+}
